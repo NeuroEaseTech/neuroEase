@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NeuroEase • Wearable micro‑coaching</title>
+  <meta name="description" content="NeuroEase delivers real‑time, privacy‑preserving micro‑coaching based on wearable signals. One page placeholder for team, product, and contact.">
+  <meta property="og:title" content="NeuroEase">
+  <meta property="og:description" content="Real‑time, privacy‑preserving micro‑coaching based on wearable signals.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://neuroease.tech/">
+  <meta property="og:image" content="https://neuroease.tech/og-image.png">
+  <meta name="theme-color" content="#027889">
+  <style>
+    :root{
+      --bg:#ffffff; --text:#0f172a; --muted:#475569; --primary:#027889; --primary-2:#b7e7ed; --card:#f8fafc;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#0b1220; --text:#e5e7eb; --muted:#9aa4b2; --primary:#31a3b4; --primary-2:#164e63; --card:#0f172a; }
+      img.logo-mark{ filter: invert(1) hue-rotate(180deg); }
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; color:var(--text); background:var(--bg);}
+    a{color:var(--primary); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:980px; margin:0 auto; padding:0 20px}
+
+    /* Header */
+    header{position:sticky; top:0; backdrop-filter:saturate(180%) blur(6px); background:color-mix(in oklab, var(--bg) 85%, transparent); border-bottom:1px solid color-mix(in oklab, var(--muted) 20%, transparent); z-index:50}
+    .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+    .brand{display:flex; align-items:center; gap:10px}
+    .logo{width:28px; height:28px; border-radius:8px; background:linear-gradient(135deg, var(--primary), var(--primary-2)); display:grid; place-items:center; color:white; font-weight:700}
+    .brand-name{font-weight:700; letter-spacing:.2px}
+    nav a{margin-left:18px}
+    .cta-btn{display:inline-block; padding:10px 14px; border-radius:10px; background:var(--primary); color:white; text-decoration:none}
+    .cta-btn:hover{opacity:.9}
+
+    /* Hero */
+    .hero{padding:72px 0 36px}
+    .hero h1{font-size:40px; line-height:1.1; margin:0 0 12px}
+    .hero p{font-size:18px; color:var(--muted); margin:0 0 18px}
+    .pill{display:inline-block; font-size:13px; background:var(--primary-2); color:var(--primary); padding:6px 10px; border-radius:999px; margin-bottom:12px}
+
+    /* Sections */
+    section{padding:48px 0; scroll-margin-top:80px}
+    h2{font-size:26px; margin:0 0 14px}
+    p.lead{color:var(--muted); font-size:18px}
+
+    /* Feature grid */
+    .grid{display:grid; gap:18px}
+    @media(min-width:720px){ .grid.cols-3{grid-template-columns:repeat(3,1fr)} }
+    .card{background:var(--card); border:1px solid color-mix(in oklab, var(--muted) 18%, transparent); border-radius:16px; padding:16px}
+    .card h3{margin:6px 0 8px; font-size:18px}
+    .card p{margin:0; color:var(--muted)}
+
+    /* Team */
+    .team{display:grid; gap:18px}
+    @media(min-width:720px){ .team{grid-template-columns:repeat(3,1fr)} }
+    .member{background:var(--card); border:1px solid color-mix(in oklab, var(--muted) 18%, transparent); border-radius:16px; padding:16px; display:flex; gap:14px; align-items:center}
+    .avatar{width:56px; height:56px; border-radius:50%; background:linear-gradient(135deg, var(--primary), var(--primary-2)); color:white; display:grid; place-items:center; font-weight:700}
+    .member small{color:var(--muted)}
+
+    /* Footer */
+    footer{padding:28px 0 48px; color:var(--muted); border-top:1px solid color-mix(in oklab, var(--muted) 18%, transparent)}
+    .footer-links{display:flex; gap:14px; flex-wrap:wrap}
+    .muted{color:var(--muted)}
+    .divider{height:1px; background:color-mix(in oklab, var(--muted) 18%, transparent); margin:28px 0}
+    .badges{display:flex; gap:10px; flex-wrap:wrap}
+    .badge{font-size:12px; background:var(--card); border:1px solid color-mix(in oklab, var(--muted) 18%, transparent); padding:6px 10px; border-radius:999px}
+    .notice{font-size:13px; color:var(--muted)}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NeuroEase",
+    "url": "https://neuroease.tech/",
+    "description": "Real‑time micro‑coaching based on wearable signals.",
+    "contactPoint": {"@type":"ContactPoint","contactType":"info","email":"info@neuroease.tech"}
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">N</div>
+        <div class="brand-name">NeuroEase</div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#features">Product</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+        <a class="cta-btn" href="mailto:info@neuroease.tech?subject=NeuroEase%20inquiry">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="pill">Private by design</span>
+        <h1>Wearable micro‑coaching that helps people regulate stress in the moment</h1>
+        <p>NeuroEase uses on‑device signals to suggest short, evidence‑based actions, for example paced breathing or a one‑minute reframing prompt. Data stays local when possible, teams can opt into aggregated insights.</p>
+        <div class="badges">
+          <span class="badge">Prototype in testing</span>
+          <span class="badge">Partner pilots, 2025</span>
+          <span class="badge">EU data residency</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>Mission</h2>
+        <p class="lead">Build a practical assistant that notices early stress patterns and nudges helpful actions without getting in the way. Initial focus is workplace wellbeing, with clear value for individuals and organizations.</p>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <h2>Product snapshot</h2>
+        <div class="grid cols-3">
+          <div class="card">
+            <h3>Signal sensing</h3>
+            <p>Heart rate dynamics and movement trends, processed locally where possible, tuned for short on‑wrist sessions.</p>
+          </div>
+          <div class="card">
+            <h3>Micro‑coaching</h3>
+            <p>Brief cues and scripts that fit into a minute, based on acceptance and attention training, configurable to context.</p>
+          </div>
+          <div class="card">
+            <h3>Privacy controls</h3>
+            <p>Clear boundaries, opt‑in sharing, and organization‑level summaries that avoid exposing personal details.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="container">
+        <h2>Team</h2>
+        <div class="team">
+          <!-- Replace initials and text with real data; add more cards as needed -->
+          <div class="member">
+            <div class="avatar" aria-hidden="true">EF</div>
+            <div>
+              <strong>Ehsan Fattahi</strong><br>
+              <small>Computational science, ML</small>
+            </div>
+          </div>
+          <div class="member">
+            <div class="avatar" aria-hidden="true">SM</div>
+            <div>
+              <strong>Sahar Mohammadi</strong><br>
+              <small>Psychology content, coaching</small>
+            </div>
+          </div>
+          <div class="member">
+            <div class="avatar" aria-hidden="true">AD</div>
+            <div>
+              <strong>Advisor, TBD</strong><br>
+              <small>Clinical or HW systems</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="lead">For pilots and collaboration, write to <a href="mailto:info@neuroease.tech">info@neuroease.tech</a>. If you are interested in research cooperation, mention the topic and timeline.</p>
+        <p class="notice">This site is a temporary one‑page overview. A detailed product page, documentation, and press kit will follow.</p>
+      </div>
+    </section>
+
+    <div class="divider container"></div>
+
+    <section id="legal">
+      <div class="container">
+        <h2>Imprint and privacy</h2>
+        <p class="notice">Add the legally required details here for Germany. Include company or person name, address, contact email, and responsible person. Add a short privacy note about contact emails and any analytics if used. Remove this placeholder text once filled.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="#legal">Imprint & Privacy</a>
+      </div>
+      <p class="muted">© <span id="y"></span> NeuroEase. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
